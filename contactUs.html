@@ -8,52 +8,51 @@
 		<meta name="description" content = "e-shop">
 		<meta name ="keywords" content="pc, smartphones, technology">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--<link rel="stylesheet" href="part1.css"> -->
-	
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+		<style>
+			#contacttab {
+				background-color: #4CAF50;
+			}
+		</style>
 
 	</head>
 
 	<body>
-		<a href = "index.html">
-			<img src="src/logo.png" alt="logo">
-		</a>
-		<p>
-
-		</p>
+		<section id="logocontainer">
+			<img id="logopic" src="src/4matlogo.png"> <section id="logotext">4MAT&#174; Online</section>
+		</section>
 		<nav>
-			<ul>
-				<li><a href = "index.html">Αρχική</a></li>
-				<li><a href = "product-categories.html">Προϊόντα</a></li>
-				<li><a href = "aboutUs.html">Σχετικά με εμάς</a></li>
-				<li><a href = "contactUs.html">Επικοινωνία</a></li>
-
-
-			</ul>
+			<a id="indextab" href = "index.html">Αρχική</a>
+			<a id="productstab" href = "product-categories.html">Προϊόντα</a>
+			<a id="abouttab" href = "aboutUs.html">Σχετικά με εμάς</a>
+			<a id="contacttab" href = "contactUs.html">Επικοινωνία</a>
+			<a id="moretab"><i class="fa fa-bars" aria-hidden="true"></i></a>
 		</nav>
 
 		<main>
 			<h1>Υποβολή φόρμας για τεχνική υποστήριξη</h1>
-			<fieldset>
-				<legend>Στοιχεία Χρήστη</legend>
+			<fieldset id="contactform">
+				<h3>Στοιχεία Χρήστη</h3>
 
 				<label for="txt_name">Ονοματεπώνυμο: </label>
 				<input type="text" id="txt_name" name="username">
-
+				<br>
 				<label for="txt_mail">Email: </label>
 				<input type="email" id="txt_mail" name="mail">
-
+				<br>	
 				<label for="num_telephone">Τηλέφωνο:</label>
 				<input type="number" id="num_telephone" name="phone">
-
+				<br>
 				<h3>Στοιχεία Παραγγελίας</h3>
 
 				<label for="txt_code">Κωδικός Προϊόντος: </label>
 				<input type="text" id="txt_code" name="code">
-
+				<br>
 				<label for="my_date">Ημερομηνία Παραγγελίας: </label>
 				<input type="date" id="my_date" name="ddate">
-
+				<br>
 				<label for="file_receipt">Απόδειξη/Τιμολόγιο: </label>
 				<input type="file" id="file_receipt" name="receipt">
 				<br>

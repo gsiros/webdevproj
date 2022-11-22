@@ -8,37 +8,33 @@
 		<meta name="description" content = "e-shop">
 		<meta name ="keywords" content="iphone-14-pro, smartphones, dynamic-island, technology">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--<link rel="stylesheet" href="part1.css"> -->
-	
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+		<style>
+			#productstab {
+				background-color: #4CAF50;
+			}
+		</style>
 
 	</head>
 
 	<body>
-		<a href = "index.html">
-			<img src="src/logo.png" alt="logo">
-		</a>
-		<p>
-
-		</p>
+		<section id="logocontainer">
+			<img id="logopic" src="src/4matlogo.png"> <section id="logotext">4MAT&#174; Online</section>
+		</section>
 		<nav>
-			<ul>
-				<li><a href = "index.html">Αρχική</a></li>
-				<li><a href = "product-categories.html">Προϊόντα</a></li>
-				<li><a href = "aboutUs.html">Σχετικά με εμάς</a></li>
-				<li><a href = "contactUs.html">Επικοινωνία</a></li>
-
-
-			</ul>
+			<a id="indextab" href = "index.html">Αρχική</a>
+			<a id="productstab" href = "product-categories.html">Προϊόντα</a>
+			<a id="abouttab" href = "aboutUs.html">Σχετικά με εμάς</a>
+			<a id="contacttab" href = "contactUs.html">Επικοινωνία</a>
+			<a id="moretab"><i class="fa fa-bars" aria-hidden="true"></i></a>
 		</nav>
 
-		<main>
+		<main id="productinfo">
 
 			Επιστροφή στην λίστα προϊόντων των Smartphones <a href="products-smartphones.html">εδώ</a>
-
-			<p>
-
-			</p>
 
 			<section id="prod_image">
 
@@ -46,13 +42,12 @@
 					<img src="src/iphone_14_pro.png" alt="iphone_main" width="200">
 
 				</section>
-
 				
 				<article>
-					<img src="src/iphone_14_pro.png" onclick="change(this.src)" alt="iphone_main" width="75">
-					<img src="src/iphone_1.png" onclick="change(this.src)" alt="iphone_1" width="100">
-					<img src="src/iphone_2.png" onclick="change(this.src)" alt="iphone_2" width="100">
-					<img src="src/iphone_3.png" onclick="change(this.src)" alt="iphone_3" width="100">
+					<img src="src/iphone_14_pro.png" alt="iphone_main" width="75">
+					<img src="src/iphone_1.png" alt="iphone_1" width="100">
+					<img src="src/iphone_2.png" alt="iphone_2" width="100">
+					<img src="src/iphone_3.png" alt="iphone_3" width="100">
 				</article>
 
 
@@ -70,79 +65,79 @@
 				
 				<h3>Χαρακτηριστικά</h3>
 				<!--Each td will have padding in order to be shown correctly in the table-->
-				<table>
+				<table class="specs">
 					<tr>
-						<td>Τύπος Κινητού</td>
+						<td class="spec">Τύπος Κινητού</td>
 						<td>SmartPhone</td>
 					</tr>
 					<tr>
-						<td>Λειτουργικό Σύστημα</td>
+						<td class="spec">Λειτουργικό Σύστημα</td>
 						<td>iOS</td>
 					</tr>
 					<tr>
-						<td>SIM</td>
+						<td class="spec">SIM</td>
 						<td>SIM + eSIM</td>
 					</tr>
 					<tr>
-						<td>Έτος Κυκλοφορίας</td>
+						<td class="spec">Έτος Κυκλοφορίας</td>
 						<td>2022</td>
 					</tr>
 					<tr>
-						<td>Χρώμα</td>
+						<td class="spec">Χρώμα</td>
 						<td>Μωβ</td>
 					</tr>
 					<tr>
-						<td>Βάρος</td>
+						<td class="spec">Βάρος</td>
 						<td>206 gr</td>
 					</tr>	
 					<tr>
-						<td>RAM</td>
+						<td class="spec">RAM</td>
 						<td>6 GB</td>
 					</tr>	
 					<tr>
-						<td>Χωρητικότητα</td>
+						<td class="spec">Χωρητικότητα</td>
 						<td>128 GB</td>
 					</tr>	
 					<tr>
-						<td>Card Slot</td>
+						<td class="spec">Card Slot</td>
 						<td>Όχι</td>
 					</tr>	
 					<tr>
-						<td>Πίσω Κάμερα</td>
+						<td class="spec">Πίσω Κάμερα</td>
 						<td>Τριπλή: Ευρυγώνιος 48MP, Τηλεφακός 12MP 3x Οπτικό<br>
 							Zoom, Υπερευρυγώνιος 12MP</td>
 					</tr>	
 					<tr>
-						<td>Μπροστά Κάμερα</td>
+						<td class="spec">Μπροστά Κάμερα</td>
 						<td>Ευρυγώνιος 12MP</td>
 					</tr>
 					<tr>
-						<td>Δυνατότητες</td>
+						<td class="spec">Δυνατότητες</td>
 						<td>Dual-tone Flash, HDR, Night Mode, Optical Zoom, Slow Motion</td>
 					</tr>
 					<tr>
-						<td>Δίκτυο Σύνδεσης</td>
+						<td class="spec">Δίκτυο Σύνδεσης</td>
 						<td>5G</td>
 					</tr>
 					<tr>
-						<td>Συνδεσιμότητα</td>
+						<td class="spec">Συνδεσιμότητα</td>
 						<td>Bluetooth, Lightning, NFC, Wi-Fi</td>
 					</tr>
 					<tr>
-						<td>Γρήγορη Φόρτιση</td>
+						<td class="spec">Γρήγορη Φόρτιση</td>
 						<td>Ναι</td>
 					</tr>
 					<tr>
-						<td>Ασύρματη Φόρτιση</td>
+						<td class="spec">Ασύρματη Φόρτιση</td>
 						<td>Ναι</td>
 					</tr>
 					<tr>
-						<td>Αισθητήρες</td>
+						<td class="spec">Αισθητήρες</td>
 						<td>Accelerometer, Face ID, LiDAR Scanner, Light<br> 
 							Sensor, Proximity, Γυροσκόπιο, Πυξίδα</td>
 					</tr>
 					<tr>
-						<td>Δακτυλικό Αποτύπωμα</td>
+						<td class="spec">Δακτυλικό Αποτύπωμα</td>
 						<td>Μη Διαθέσιμο</td>
 					</tr>
 				</table>
@@ -223,34 +218,32 @@
 
 			<section id="reviews">
 				<h2>Αξιολογήσεις</h2>
-				<section id="ireview">
-					<article>
-						<h3>Βαθμολογία: 4.5/5</h3>
-						<h3>Όνομα: marios_makropoulos</h3>
-						<h4>Ημερομηνία: 05/11/2022</h4>
+				<section class="ireview">
+					<h3 class="reviewername">marios_makropoulos</h3>, 05/11/2022
+					<br>
+					Βαθμολογία:  &#9733;&#9733;&#9733;&#9733;&#9734;
+					<hr>
+					<p class="reviewtext">
 						Τέλειο κινητό! Θα ήταν τέλειο αν δεν υπήρχαν τα bugs με το iOS 16.
-						
-					</article>
+					</p>
+					
 
 				</section>
-				<section id="ireview">
-					<article>
-						<h3>Βαθμολογία: 5/5</h3>
-						<h3>Όνομα: alexandros_kokko21</h3>
-						<h4>Ημερομηνία: 25/11/2022</h4>
-						Ερχομαι απο το iPhone 11 σε αυτο το μοντελο και εχω να πω πως εχει τεραστιες διαφορες. <br>
-						Εχω ερωτευτει με το ποσο smooth ειναι η κινηση του ειναι παρα πολυ γρηγορο οσο δε παει.. <br>
-						η επαννεκινηση του γινεται σε δευτερολεπτα πρωτη φορα το βλεπω σε αιφον, η εφαρμογες ανοιγουν<br> 
-						γρηγορα, τα στορυ στο ινσταγκραμ δεν υπαρχει καθως τα αλλαζεις… γενικα το 120hz ειναι <br>
-						αρκετα ικανοποιητικό. Η καμερα οπου ειναι 48mp ειναι φανταστικη και ειναι ο κυριος λογος <br>
-						που το πηρα το κινητο (μαζι με το dynamic island) οπου και αυτο ειναι ικανοποιητικο κατι <br>
-						διαφορετικο αλλα μεχρι εκει δε θα το δειτε συχνα να ανοιγει παραθυρακι κτλπ. Ομως ειναι ομορφο.<br>
-						Η συσκευη ειναι στιβαρή παρα πολυ καλη ποιοτητα το χρωμα matte πιστευω το καλυτερο χρωμα<br>
-						που θα επαιρνε καποιος στο συγκεκριμένο. Τελος αν ειστε ιδιοκτητες του iphone 12<br>
-						και κατω μη το σκεφτεστε καν αν εχετε την οικονομικη δυνατοτητα. Αυτα απο εμενα. TOP
-						
-					</article>
-
+				<section class="ireview">
+					<h3 class="reviewername">alexandros_kokko21</h3>, 25/11/2022
+					<br>
+					Βαθμολογία: &#9733;&#9733;&#9733;&#9733;&#9733;
+					<hr>
+					<p class="reviewtext">Ερχομαι απο το iPhone 11 σε αυτο το μοντελο και εχω να πω πως εχει τεραστιες διαφορες.
+						Εχω ερωτευτει με το ποσο smooth ειναι η κινηση του ειναι παρα πολυ γρηγορο οσο δε παει..
+						η επαννεκινηση του γινεται σε δευτερολεπτα πρωτη φορα το βλεπω σε αιφον, η εφαρμογες ανοιγουν
+						γρηγορα, τα στορυ στο ινσταγκραμ δεν υπαρχει καθως τα αλλαζεις… γενικα το 120hz ειναι
+						αρκετα ικανοποιητικό. Η καμερα οπου ειναι 48mp ειναι φανταστικη και ειναι ο κυριος λογος
+						που το πηρα το κινητο (μαζι με το dynamic island) οπου και αυτο ειναι ικανοποιητικο κατι
+						διαφορετικο αλλα μεχρι εκει δε θα το δειτε συχνα να ανοιγει παραθυρακι κτλπ. Ομως ειναι ομορφο.
+						Η συσκευη ειναι στιβαρή παρα πολυ καλη ποιοτητα το χρωμα matte πιστευω το καλυτερο χρωμα
+						που θα επαιρνε καποιος στο συγκεκριμένο. Τελος αν ειστε ιδιοκτητες του iphone 12
+						και κατω μη το σκεφτεστε καν αν εχετε την οικονομικη δυνατοτητα. Αυτα απο εμενα. TOP</p>
 				</section>
 			</section>
 
