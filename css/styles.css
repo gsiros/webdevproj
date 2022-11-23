@@ -65,6 +65,7 @@ nav a {
 nav a:hover {
     background-color: #303F9F;
 }
+
 /*
 nav a:first-child {
     border-radius: 10px 0px 0px 10px;
@@ -109,7 +110,7 @@ a:hover.subcategorytitle {
     padding-top: 2px;
     padding-bottom: 2px;
     margin: 10px;
-
+    transition: box-shadow 0.25s;
 }
 
 .hiddensubcat {
@@ -189,17 +190,73 @@ table.specs td.spec {
     font-weight: bold;
 }
 
+#contacttitle {
+    font-size: x-large;
+    width: fit-content;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #contactform {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
     border: 0px;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 35px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+
+section.cfitem {
+    display: flex;
+    flex-direction: column;
+}
+
+.cfitem input {
+    margin-top: 2.5px;
+    margin-bottom: 15px;
+}
+
+.cfitem textarea {
+    resize: vertical;
+    min-width: 400px;
+    min-height: 100px;
+    margin-top: 2.5px;
+    margin-bottom: 15px;
+    font-size: medium;
+    border-color: #757575;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+button.cfitem {
+    background-color: #4CAF50;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: medium;
+    border-radius: 10px;
+
+}
+
+button.cfitem:active {
+    background-color: #439d46;
 }
 
 #contactform input {
     border-color: #757575;
     border-style: solid;
     border-width: 0.5px;
-    border-radius: 2.5px;
+    width: 400px;
+    font-size: medium;
 }
 
 .ireview {  
