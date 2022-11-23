@@ -44,7 +44,8 @@ nav {
     top: 100px;
     width: 100%;
     /*border-radius: 10px;*/
-    background-color: #3F51B5;
+    /*background-color: #3F51B5;*/
+    background-color: #0B577F;
 }
 
 main {
@@ -63,7 +64,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #303F9F;
+    /*background-color: #303F9F;*/
+    background-color: #084371;
 }
 
 /*
@@ -274,8 +276,25 @@ button.cfitem:active {
     color: #606060;
 }
 
+#logofoot {
+    height: 50px;
+    width: 50px;
+}
+
+.maincontent {
+    flex: 1 0 auto;
+}
+
 footer {
-    background-color: #303F9F;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    padding: 0 30px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    box-shadow: 0px 0px 8px 0px #000000;
+    background-color: #0B577F;
     font-size: small;
     color: white;
     text-align: center;
