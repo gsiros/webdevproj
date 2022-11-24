@@ -36,28 +36,31 @@
 		<main>
 			<h1 id="contacttitle">Φόρμα για Τεχνική Υποστήριξη</h1>
 			<fieldset id="contactform">
-				<h3 class="cfitem">Στοιχεία Χρήστη</h3>
-				<section id="userdata" class="cfitem">
-					<label for="txt_name">Ονοματεπώνυμο</label>
-					<input type="text" id="txt_name" name="username">
-					<label for="txt_mail">Email</label>
-					<input type="email" id="txt_mail" name="mail">
-					<label for="num_telephone">Τηλέφωνο</label>
-					<input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="num_telephone" name="phone">
+				<section id="userinfo">
+					<section id="userdata" class="cfitem">
+						<h3 class="cfitem">Στοιχεία Χρήστη</h3>
+						<label for="txt_name">Ονοματεπώνυμο</label>
+						<input type="text" id="txt_name" name="username">
+						<label for="txt_mail">Email</label>
+						<input type="email" id="txt_mail" name="mail">
+						<label for="num_telephone">Τηλέφωνο</label>
+						<input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="num_telephone" name="phone">
+					</section>
+					
+					
+					<section class="cfitem">
+						<h3 class="cfitem">Στοιχεία Παραγγελίας</h3>
+						<label for="txt_code">Κωδικός Προϊόντος</label>
+						<input type="text" id="txt_code" name="code">
+						<label for="my_date">Ημερομηνία Παραγγελίας</label>
+						<input type="date" id="my_date" name="ddate">
+						<label for="file_receipt">Απόδειξη/Τιμολόγιο</label>
+						<input type="file" id="file_receipt" name="receipt">
+						<label for="txt_issue">Περιγραφή Προβλήματος</label>
+						<textarea type="text" id="txt_issue" name="issue" placeholder="Περιγράψτε εδώ το πρόβλημά σας."></textarea>	
+					</section>
 				</section>
-				
-				
-				<h3 class="cfitem">Στοιχεία Παραγγελίας</h3>
-				<section class="cfitem">
-					<label for="txt_code">Κωδικός Προϊόντος</label>
-					<input type="text" id="txt_code" name="code">
-					<label for="my_date">Ημερομηνία Παραγγελίας</label>
-					<input type="date" id="my_date" name="ddate">
-					<label for="file_receipt">Απόδειξη/Τιμολόγιο</label>
-					<input type="file" id="file_receipt" name="receipt">
-					<label for="txt_issue">Περιγραφή Προβλήματος</label>
-					<textarea type="text" id="txt_issue" name="issue" placeholder="Περιγράψτε εδώ το πρόβλημά σας."></textarea>	
-				</section>
+	
 				<button class="cfitem" type="submit">Υποβολή Φόρμας</button>
 
 			</fieldset>
