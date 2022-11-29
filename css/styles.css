@@ -331,16 +331,27 @@ button.cfitem:active {
 css about the iphone 14 pro page.
 */
 
-.image_and_price {
+#short_description {
     display: grid;
-    grid-template-rows: auto auto auto;
-    align-items: stretch;
+    grid-template-columns: min-content max-content;
+    background-color: rgb(218, 218, 218);
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+    width: fit-content;
+    box-shadow: 0px 3px 5px 2px gray;
 }
 
-#iphone_main_view {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
+#image_and_price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    border-radius: 25px;
+    background-color: white;
+    padding: 10px;
+    width: fit-content;
 }
 
 #iphone_photos {
@@ -349,36 +360,98 @@ css about the iphone 14 pro page.
 }
 
 #iphone_photos img {
-    margin-right: 10px;
+    margin: 5px;
 }
 
-#name_price {
-    display: flex;
-    flex-direction: column;
+#iphone_specs {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
+#subnav {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
 
-#short_description {
-    display: inline-block;
-    
+#subnav:first-child {
+    margin-left: 10px;
+}
+
+#subnav a {
+    justify-self: center;
+    text-decoration: none;
+    color: grey;
+    transition: color 0.2s;
+}
+
+#subnav a:hover {
+    color: #4CAF50;
+}
+
+#full_description {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 #full_description img {
     margin-top: 10px;
-    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px 2px gray;
 }
 
-#full_description {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+#photonic_engine_img {
+    float: left;
+    margin-right: 20px;
+}
+
+#pro_res_img {
+    float: right;
+    margin-left: 20px;
+    width: 500px;
+}
+
+#bionic_img {
+    float: left;
+    margin-right: 20px;
 }
 
 
-.ireview {  
+
+#full_description iframe {
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px 2px gray;
+}
+
+#promo_iframe {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    box-shadow: 0px 3px 5px 2px gray;
+}
+
+#dynamic_island_iframe {
+    float: right;
+    margin-top: 10px;
+}
+
+#reviews h2 {
+    margin-left: 100px;   
+}
+
+.ireview { 
     background-color: white;
-    margin: 10px;
-    padding: 5px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
     border-radius: 5px;
 }
 
