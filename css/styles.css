@@ -310,6 +310,54 @@ button.cfitem:active {
     font-size: medium;
 }
 
+/*
+css about the iphone 14 pro page.
+*/
+
+.image_and_price {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    align-items: stretch;
+}
+
+#iphone_main_view {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+#iphone_photos {
+    display: flex;
+    flex-direction: row;
+}
+
+#iphone_photos img {
+    margin-right: 10px;
+}
+
+#name_price {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#short_description {
+    display: inline-block;
+    
+}
+
+#full_description img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#full_description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
 .ireview {  
     background-color: white;
     margin: 10px;
@@ -324,6 +372,10 @@ button.cfitem:active {
 .reviewtext {
     color: #606060;
 }
+
+/*
+ends with iphone
+*/
 
 #logofoot {
     height: 50px;
