@@ -371,14 +371,9 @@ css about the iphone 14 pro page.
 #subnav {
     display: grid;
     grid-template-columns: auto auto auto;
-    width: 100%;
     background-color: white;
     padding: 20px;
     margin-top: 20px;
-}
-
-#subnav:first-child {
-    margin-left: 10px;
 }
 
 #subnav a {
