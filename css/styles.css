@@ -66,6 +66,8 @@ nav {
 
 #indexmain p {
     color: gray;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #indexmain a {
@@ -138,6 +140,21 @@ a:hover.subcategorytitle {
     object-fit: contain;
     width: 100%;
 }
+
+#newarrival {
+    color: darkred;
+    background-color: black;
+    -webkit-animation-name: colorchange;  
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 3.5s; 
+}
+
+@-webkit-keyframes colorchange {  
+    0% { color: darkred; }
+    50% { color: red; }
+    51% { color: red; }
+    100% { color: darkred; }
+  }
 
 .categorycontainer {
     display: grid;
