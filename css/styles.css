@@ -138,7 +138,7 @@ a:hover.subcategorytitle {
 
 #indexadsrc {
     object-fit: contain;
-    width: 100%;
+    max-width: 100%;
 }
 
 #newarrival {
