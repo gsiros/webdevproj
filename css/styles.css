@@ -163,6 +163,34 @@ a:hover.subcategorytitle {
     100% { color: darkred; }
   }
 
+  /*
+
+@media screen and (min-width: 500px) {
+    .categorycontainer {
+
+        grid-template-rows: auto auto;
+    }
+
+    .categoryitem {
+        width: fit-content;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    .categorycontainer {
+        grid-template-columns: 200px 200px 200px;
+        align-items: stretch;
+        justify-content: center;
+
+    }
+    .categoryitem {
+        width: fit-content;
+    }
+}
+
+*/
+
 .categorycontainer {
     display: grid;
     grid-template-columns: auto auto auto;
