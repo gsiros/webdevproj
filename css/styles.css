@@ -201,7 +201,7 @@ a:hover.subcategorytitle {
     --categoryitem-min-size: 20rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--categoryitem-min-size), 1fr));
-    grid-gap: 2.5rem;
+    grid-gap: 1rem;
     margin-left: 30px;
 }
 
