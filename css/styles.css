@@ -64,6 +64,24 @@ nav {
     margin-top: 50px;
 }
 
+@media screen and (max-width: 768px) {
+    #indexmain h1 {
+        font-size: 25px;
+    }
+    #indexmain h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    #indexmain h1 {
+        font-size: 20px;
+    }
+    #indexmain h2 {
+        font-size: 17px;
+    }
+}
+
 #indexmain p {
     color: gray;
     margin-left: 50px;
@@ -625,6 +643,13 @@ footer section img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .aboutpersons {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 }
 
 .person {
