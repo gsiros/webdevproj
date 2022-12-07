@@ -645,7 +645,7 @@ footer section img {
     align-items: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 670px) {
     .aboutpersons {
         grid-template-columns: 1fr;
         justify-items: center;
