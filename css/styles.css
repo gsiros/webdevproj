@@ -556,6 +556,41 @@ footer section {
     color: white;
 }
 
+
+@media screen and (max-width: 768px) {
+    #footersocials {
+        font-size: 12px;
+    }
+    #footercopyright p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    /*
+    .footersocials {
+        flex-direction: column;
+        justify-items: center;
+    }
+    .footercopyright {
+        flex-direction: column;
+        justify-items: center;
+    }
+    */
+
+    footer {
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+    }
+    #footersocials {
+        font-size: 10px;
+    }
+    #footercopyright p {
+        font-size: 12px;
+    }
+}
+
 #footercopyright {
     display: flex;
     flex-direction: row;
