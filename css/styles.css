@@ -444,7 +444,51 @@ css about the iphone 14 pro page.
         grid-template-columns: 1fr;
         justify-items: center;
     }
+    .ifull_desc {
+        display: flex;
+        flex-direction: column;
+    }
 }
+
+@media screen and (max-width: 600px) {
+    .ifull_desc {
+        display: flex;
+        flex-direction: column;    
+    }
+    .ifull_desc img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .ifull_desc iframe {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #full_description {
+        justify-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #ireview {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #reviews h2 {
+        margin-left: 100px;   
+    }
+
+    
+    
+    
+}
+
+
 
 #image_and_price {
     display: flex;
@@ -501,22 +545,25 @@ css about the iphone 14 pro page.
     margin-top: 10px;
     border-radius: 15px;
     box-shadow: 0px 3px 5px 2px gray;
+  
 }
 
 #photonic_engine_img {
     float: left;
     margin-right: 20px;
+    
 }
 
 #pro_res_img {
     float: right;
     margin-left: 20px;
-    width: 500px;
+    
 }
 
 #bionic_img {
     float: left;
     margin-right: 20px;
+    
 }
 
 
@@ -524,6 +571,7 @@ css about the iphone 14 pro page.
 #full_description iframe {
     border-radius: 15px;
     box-shadow: 0px 3px 5px 2px gray;
+  
 }
 
 #promo_iframe {
