@@ -103,6 +103,11 @@ nav a:hover {
     background-color: #084371;
 }
 
+nav a:nth-last-child(2) {
+    float: right;
+    /*border-radius: 0px 10px 10px 0px;*/
+
+}
 
 nav a:last-child {
     display: none;
@@ -570,7 +575,7 @@ footer section img {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
 
     .navbar a:not(:first-child) {display: none;}
     .navbar a:last-child {
