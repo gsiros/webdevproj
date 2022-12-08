@@ -13,6 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="js/css_misc.js"></script>
 
         <style>
 			#abouttab {
@@ -22,16 +23,16 @@
 
 	</head>
 
-	<body>
+	<body id="indexbody">
 		<section id="logocontainer">
 			<img id="logopic" src="src/4matlogo.png"> <section id="logotext">4MAT&#174; Online</section>
 		</section>
-		<nav>
+		<nav id="mainnavbar" class="navbar">
 			<a id="indextab" href = "index.html">Αρχική</a>
 			<a id="productstab" href = "product-categories.html">Προϊόντα</a>
 			<a id="abouttab" href = "aboutUs.html">Σχετικά με εμάς</a>
 			<a id="contacttab" href = "contactUs.html">Επικοινωνία</a>
-			<a id="moretab"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			<a id="moretab" href="javascript:void(0);" onclick="navbarChanger()"><i class="fa fa-bars" aria-hidden="true"></i></a>
 		</nav>
 
         <main>
