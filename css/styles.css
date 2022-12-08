@@ -579,6 +579,35 @@ footer section img {
     margin: 10px;
 }
 
+#loginform {
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 500px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    border: 0px;
+    border-radius: 10px;
+    padding: 35px;
+    padding-top: 10px;
+
+    padding-bottom: 15px;
+}
+
+#logindata p{
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+#login_main {
+    margin-bottom: 100px;
+}
+
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 680px) {
 
@@ -602,6 +631,13 @@ footer section img {
     
     .indexMain.responsive {
         margin-top: 100px;
+    }
+
+    #loginform {
+        width: fit-content;
+        height: fit-content;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
