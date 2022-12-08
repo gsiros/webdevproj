@@ -124,6 +124,11 @@ body {
     font-size: 15pt;
 }
 
+#categories_main {
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
 
 a.subcategorytitle {
     color: black;
