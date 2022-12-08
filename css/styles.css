@@ -54,24 +54,6 @@ html, body {
     margin-top: 50px;
 }
 
-@media screen and (max-width: 768px) {
-    #indexmain h1 {
-        font-size: 25px;
-    }
-    #indexmain h2 {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 578px) {
-    #indexmain h1 {
-        font-size: 20px;
-    }
-    #indexmain h2 {
-        font-size: 17px;
-    }
-}
-
 #indexmain p {
     color: gray;
     margin-left: 50px;
@@ -120,45 +102,6 @@ nav a:hover {
     /*background-color: #303F9F;*/
     background-color: #084371;
 }
-
-/*
-nav a:first-child {
-    border-radius: 10px 0px 0px 10px;
-}*/
-
-@media screen and (max-width: 600px) {
-    .navbar a:not(:first-child) {display: none;}
-    .navbar a:last-child {
-      float: right;
-      display: block;
-    }
-
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-    .navbar.responsive {position: relative;}
-    .navbar.responsive a:last-child {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .navbar.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .indexMain.responsive {
-        margin-top: 100px;
-    }
-  }
-
-/*@media screen and (min-width: 480px) {
-    nav a:last-child {
-        display: none;
-    }    
-}*/
 
 
 nav a:last-child {
@@ -210,34 +153,6 @@ a:hover.subcategorytitle {
     51% { color: red; }
     100% { color: darkred; }
   }
-
-/*
-
-@media screen and (max-width: 480px) {
-    .categorycontainer {
-        grid-template-rows: ;
-    }
-
-    .categoryitem {
-        width: fit-content;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    .categorycontainer {
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        grid-template-areas: "#categoryitem #categoryitem"
-        "#categoryitem #categoryitem";
-        
-    }
-    .categoryitem {
-        width: fit-content;
-    }
-}
-*/
-
 
 .categorycontainer {
     display: grid;
@@ -439,57 +354,6 @@ css about the iphone 14 pro page.
     box-shadow: 0px 3px 5px 2px gray;
 }
 
-@media screen and (max-width: 920px) {
-    #short_description {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-    .ifull_desc {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .ifull_desc {
-        display: flex;
-        flex-direction: column;    
-    }
-    .ifull_desc img {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    
-    .ifull_desc iframe {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    #full_description {
-        justify-items: center;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    #ireview {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    #reviews h2 {
-        margin-left: 100px;   
-    }
-
-    
-    
-    
-}
-
-
-
 #image_and_price {
     display: flex;
     flex-direction: column;
@@ -535,66 +399,37 @@ css about the iphone 14 pro page.
 }
 
 #full_description {
-    margin-left: 100px;
-    margin-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     display: grid;
     grid-template-columns: 1fr;
 }
 
 #full_description img {
+    display: block;
     margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 15px;
     box-shadow: 0px 3px 5px 2px gray;
-  
+    max-width: 500px;
+    width: 100%;
 }
-
-#photonic_engine_img {
-    float: left;
-    margin-right: 20px;
-    
-}
-
-#pro_res_img {
-    float: right;
-    margin-left: 20px;
-    
-}
-
-#bionic_img {
-    float: left;
-    margin-right: 20px;
-    
-}
-
-
 
 #full_description iframe {
     border-radius: 15px;
     box-shadow: 0px 3px 5px 2px gray;
-  
+    max-width: 500px;
+    width: 100%;
+    height: 300px;
 }
 
-#promo_iframe {
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    border-radius: 10%;
-    box-shadow: 0px 3px 5px 2px gray;
-}
-
-#dynamic_island_iframe {
-    float: right;
-    margin-top: 10px;
-}
-
-#reviews h2 {
-    margin-left: 100px;   
+#reviews {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .ireview { 
     background-color: white;
-    margin-right: 100px;
-    margin-left: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
@@ -659,41 +494,6 @@ footer section {
     color: white;
 }
 
-
-@media screen and (max-width: 768px) {
-    #footersocials {
-        font-size: 12px;
-    }
-    #footercopyright p {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 570px) {
-    /*
-    .footersocials {
-        flex-direction: column;
-        justify-items: center;
-    }
-    .footercopyright {
-        flex-direction: column;
-        justify-items: center;
-    }
-    */
-
-    footer {
-        grid-template-columns: 1fr;
-        justify-items: center;
-
-    }
-    #footersocials {
-        font-size: 10px;
-    }
-    #footercopyright p {
-        font-size: 12px;
-    }
-}
-
 #footercopyright {
     display: flex;
     flex-direction: row;
@@ -730,12 +530,7 @@ footer section img {
     align-items: center;
 }
 
-@media screen and (max-width: 670px) {
-    .aboutpersons {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-}
+
 
 .person {
     display: flex;
@@ -768,4 +563,121 @@ footer section img {
     display: inline-block;
     font-size: 30pt;
     margin: 10px;
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a:last-child {
+      float: right;
+      display: block;
+    }
+
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a:last-child {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .indexMain.responsive {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #indexmain h1 {
+        font-size: 20px;
+    }
+    #indexmain h2 {
+        font-size: 17px;
+    }
+}
+
+
+/* FOR TABLET */
+
+@media screen and (max-width: 920px) {
+    #short_description {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #full_description {
+        margin-left: none;
+        margin-right: none;
+    }
+
+    .ifull_desc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ireview {
+        margin-left: none;
+        margin-right: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    #full_description {
+        
+        padding-left: 20px;
+        padding-right: 20px;
+    
+        
+    }
+    .ifull_desc {
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+    }
+
+    #reviews {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+
+}
+
+
+
+@media screen and (max-width: 670px) {
+    .aboutpersons {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #footersocials {
+        font-size: 12px;
+    }
+    #footercopyright p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    footer {
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+    }
+    #footersocials {
+        font-size: 10px;
+    }
+    #footercopyright p {
+        font-size: 12px;
+    }
 }
