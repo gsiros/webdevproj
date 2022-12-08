@@ -266,7 +266,7 @@ table.specs td.spec {
 #contacttitle {
     font-size: x-large;
     width: fit-content;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -278,17 +278,20 @@ table.specs td.spec {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     background-color: white;
     border: 0px;
     border-radius: 10px;
     padding: 35px;
     padding-top: 10px;
+
     padding-bottom: 15px;
 }
 
 #userinfo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: stretch;
 }
 
@@ -296,6 +299,7 @@ table.specs td.spec {
 section.cfitem {
     display: flex;
     flex-direction: column;
+    margin: 10px;
 }
 
 .cfitem input {
@@ -607,6 +611,8 @@ footer section img {
     #short_description {
         grid-template-columns: 1fr;
         justify-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     #full_description {
@@ -629,12 +635,10 @@ footer section img {
 @media screen and (max-width: 600px) {
     
     #full_description {
-        
         padding-left: 20px;
         padding-right: 20px;
-    
-        
     }
+
     .ifull_desc {
         display: flex;
         flex-direction: column;    
@@ -645,8 +649,30 @@ footer section img {
         padding-left: 20px;
         padding-right: 20px;
     }
-    
 
+}
+
+@media screen and (max-width: 720px) {
+    #contactform {
+        width: auto;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    #userinfo {   
+        flex-direction: column;
+    }    
+
+    #contactform input {
+        width: 100%;
+    }
+
+    .cfitem textarea {
+        width: 100%;
+        min-height: 100px;
+        min-width: 100%;
+        
+    }
 }
 
 
