@@ -11,6 +11,18 @@ html, body {
     display: grid;
 }
 
+/*
+Important: The media queries are located
+on the bottom of this file.
+*/
+
+/*
+The following area specifies the orientation and 
+styling of the logo.
+Our logo is contained in a Flex-Box.
+
+*/
+
 #logocontainer {
     position: fixed;
     top: 0;
@@ -79,15 +91,23 @@ main {
     margin-top: 150px;
 }
 
+/*
+The main navigation bar has fixed position
+and it is located on to the top of each page.
+*/
+
 nav {
     position: fixed;
     top: 100px;
     width: 100%;
-    /*border-radius: 10px;*/
-    /*background-color: #3F51B5;*/
     background-color: #0B577F;
     margin-bottom: 0;
 }
+
+/*
+Here we use a transition each time
+we access a category in the navbar.
+*/
 
 nav a {
     display: inline-block;
@@ -98,27 +118,28 @@ nav a {
     transition: background-color 0.4s;
 }
 
+/*
+when on hover: the color of the hovered
+item gets a different color.
+*/
+
 nav a:hover {
-    /*background-color: #303F9F;*/
     background-color: #084371;
 }
 
 nav a:nth-last-child(2) {
     float: right;
-    /*border-radius: 0px 10px 10px 0px;*/
-
 }
 
 nav a:last-child {
     display: none;
     float: right;
-    /*border-radius: 0px 10px 10px 0px;*/
-
 }
 
 body {
     background-color: #eaeaea;
 }
+
 
 .categorytitle {
     font-size: 15pt;
@@ -138,6 +159,11 @@ a.subcategorytitle {
 a:hover.subcategorytitle {
     background-color: #eaeaea;
 }
+
+/*
+We specify the size and orientation
+of the images on index.
+*/
 
 #indexad {
     margin: 0;
@@ -162,7 +188,16 @@ a:hover.subcategorytitle {
     50% { color: red; }
     51% { color: red; }
     100% { color: darkred; }
-  }
+}
+
+/*
+This is a Grid-Layout for the container
+of the products-categories page.
+The use of minmax avoids the use of media queries
+each time the screen size changes. Instead, each grid item
+adapts to the available screen space. Moreover, we chose to 
+show each grid-item in the center of the page.
+*/
 
 .categorycontainer {
     display: grid;
@@ -171,6 +206,13 @@ a:hover.subcategorytitle {
     grid-gap: 1rem;
     justify-items: center;
 }
+
+/*
+Category items are flex, in order to 
+show with the appropriate way.
+We also specify min and max width in order
+to be shown correctly while resized.
+*/
 
 .categoryitem {
     display: flex;
@@ -197,15 +239,29 @@ a:hover.subcategorytitle {
     display: none;
 }
 
+/*
+When on hover, the categoryitem has a specific
+box-shadow.
+*/
 
 .categoryitem:hover {
     box-shadow: 0px 0px 3px 4px gray;
 }
 
+/*
+When we hover on the categoryitem
+its elements are extended.
+*/
 
 .categoryitem:hover > .hiddensubcat {
     display: block;
 }
+
+/*
+As we did with the producy-categories,
+we use the same grid layout technique to 
+products-laptops and products-smartphones.
+*/
 
 .products {
     display: grid;
@@ -281,6 +337,11 @@ table.specs td.spec {
     margin-right: auto;
 }
 
+/*
+On the contactUs page, we use 
+a flexbox container.
+*/
+
 #contactform {
     display: flex;
     flex-direction: column;
@@ -329,6 +390,11 @@ section.cfitem {
     border-width: 0.5px;
 }
 
+/*
+This is the submit form button on the
+contactUs page.
+*/
+
 button.cfitem {
     background-color: #4CAF50;
     padding: 10px;
@@ -339,6 +405,11 @@ button.cfitem {
     border-radius: 10px;
 
 }
+
+/*
+When the submit button is clicked
+it changes color.
+*/
 
 button.cfitem:active {
     background-color: #439d46;
@@ -356,6 +427,12 @@ button.cfitem:active {
 css about the iphone 14 pro page.
 */
 
+/*
+The short description has a grid layout
+and its elements are resizing when the screen size
+changes.
+*/
+
 #short_description {
     display: grid;
     grid-template-columns: min-content max-content;
@@ -367,6 +444,13 @@ css about the iphone 14 pro page.
     width: fit-content;
     box-shadow: 0px 3px 5px 2px gray;
 }
+
+/*
+This area contains the image and image previews,
+as well as the price and product code.
+We use a flex box again in order to be shown in the
+appropriate way.
+*/
 
 #image_and_price {
     display: flex;
@@ -393,6 +477,11 @@ css about the iphone 14 pro page.
     margin-right: 20px;
 }
 
+/*
+This subnav is used to have an easier access to
+the full description and reviews.
+*/
+
 #subnav {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -400,6 +489,11 @@ css about the iphone 14 pro page.
     padding: 20px;
     margin-top: 20px;
 }
+
+/*
+When we access a subnav's element
+its color changes with a small transition.
+*/
 
 #subnav a {
     justify-self: center;
@@ -412,12 +506,21 @@ css about the iphone 14 pro page.
     color: #4CAF50;
 }
 
+/*
+The full description has a grid layout.
+*/
+
 #full_description {
     padding-left: 50px;
     padding-right: 50px;
     display: grid;
     grid-template-columns: 1fr;
 }
+
+/*
+We use a specific size to each picture
+and iframe inside the full_description section.
+*/
 
 #full_description img {
     display: block;
@@ -466,6 +569,12 @@ ends with iphone
     height: 50px;
     width: 50px;
 }
+
+/*
+Our footer has a grid layout too. It 
+contains to main items and it is
+oriented verticaly.
+*/
 
 footer {
     display: grid;
@@ -648,6 +757,11 @@ footer section img {
         margin-right: 20px;
     }
 }
+
+/*
+The h1 and h2 font adapts, when the
+screen gets lower than 600 pixels.
+*/
 
 @media screen and (max-width: 600px) {
     #indexmain h1 {
