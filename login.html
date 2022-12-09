@@ -37,13 +37,13 @@
 
 		<main id="login_main">
 			<h1 id="contacttitle">Συνδέσου στον λογαριασμό σου</h1>
-			<fieldset id="loginform">
+			<form id="loginform">
 				<section id="userinfo">
 					<section id="logindata" class="cfitem">
 						<label for="txt_name">Όνομα χρήστη</label>
-						<input type="text" id="txt_name" name="username">
+						<input type="text" id="txt_name" name="username" required>
 						<label for="usrpswd">Κωδικός Πρόσβασης</label>
-						<input type="password" id="usrpswd" name="mail">
+						<input type="password" id="usrpswd" name="mail" required>
 						<p>
 							Δεν είσαι ήδη εγγεγραμένος; Δημιούργησε λογαριασμό 
 							<a href="register.html">εδώ.</a>
@@ -53,9 +53,9 @@
 					
 				</section>
 	
-				<button class="cfitem" type="submit">Σύνδσεση</button>
+				<button class="cfitem" type="submit">Σύνδεση</button>
 
-			</fieldset>
+			</form>
 
 		</main>
 

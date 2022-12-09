@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script type="text/javascript" src="js/css_misc.js"></script>
+        <script type="text/javascript" src="js/val-const.js"></script>
 
 		<style>
 			#logintab {
@@ -37,35 +38,143 @@
 
 		<main>
 			<h1 id="contacttitle">Εγγραφή Νέου Χρήστη</h1>
-			<fieldset id="contactform">
+			<form id="contactform" method="post" action="/register-user" autocomplete="on" onsubmit="return checkPasswords(this) && checkAge(this);">
 				<section id="userinfo">
 					<section id="userdata" class="cfitem">
 						<h3 class="cfitem">Στοιχεία Χρήστη</h3>
+                        <label for="txt_usr">Όνομα Χρήστη</label>
+						<input type="text" id="txt_usr" name="username"n required>
+
 						<label for="txt_name">Ονοματεπώνυμο</label>
-						<input type="text" id="txt_name" name="username">
+						<input type="text" id="txt_name" name="namesurname">
+
+                        <label for="birthday">Ημ/νία Γέννησης</label>
+						<input type="date" id="birthday" name="birthday">
+
+                        <label for="usrpswd">Κωδικός Πρόσβασης</label>
+						<input type="password" id="usrpswd1" name="usrpswd1" placeholder="Συνθηματικό">
+						<input type="password" id="usrpswd2" name="usrpswd2" placeholder="Επιβεβαίωση Συνθηματικού">
+
 						<label for="txt_mail">Email</label>
 						<input type="email" id="txt_mail" name="mail">
+
 						<label for="num_telephone">Τηλέφωνο</label>
-						<input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="num_telephone" name="phone">
-					</section>
+						<input type="tel" minlength="10" maxlength="10" pattern="69[0-9]{8}" id="num_telephone" name="phone" title="Δεκτοί αριθμοί ελληνικών και κυπριακών τηλεφώνων μόνο.">
+					
+                        <label for="num_telephone_home">Τηλέφωνο Οικίας</label>
+						<input type="tel" minlength="10" maxlength="10" id="num_telephone_home" name="phone">
+					
+                        <label for="num_telephone_home">Διεύθυνση Κατοικίας</label>
+                        <input type="address" id="txt_addr1" name="addr1" placeholder="Γραμμή Διεύθυνσης 1">
+                        <input type="address" id="txt_addr2" name="addr2" placeholder="Γραμμή Διεύθυνσης 2">
+
+                    </section>
 					
 					
 					<section class="cfitem">
-						<h3 class="cfitem">Στοιχεία Παραγγελίας</h3>
-						<label for="txt_code">Κωδικός Προϊόντος</label>
-						<input type="text" id="txt_code" name="code">
-						<label for="my_date">Ημερομηνία Παραγγελίας</label>
-						<input type="date" id="my_date" name="ddate">
-						<label for="file_receipt">Απόδειξη/Τιμολόγιο</label>
-						<input type="file" id="file_receipt" name="receipt">
-						<label for="txt_issue">Περιγραφή Προβλήματος</label>
-						<textarea type="text" id="txt_issue" name="issue" placeholder="Περιγράψτε εδώ το πρόβλημά σας."></textarea>	
+						<h3 class="cfitem">Στοιχεία Πληρωμής</h3>
+
+						<label for="paymentmethod">Τρόπος Πληρωμής</label>
+						<select>
+                            <option value="cash">Αντικαταβολή</option>
+                            <option value="card">Τραπεζική Κάρτα</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                        
+                        <label for="send_addr">Διεύθυνση Αποστολής</label>
+                        <input type="address" id="saddr1" name="saddr1" placeholder="Γραμμή Διεύθυνσης 1" required>
+                        <input type="address" id="saddr2" name="saddr2" placeholder="Γραμμή Διεύθυνσης 2" required>
+                        
+                        <label for="notificationmethod">Τρόπος Επικοινωνίας</label>
+						<select>
+                            <option value="sms">SMS</option>
+                            <option value="email">Email</option>
+                            <option value="viber">Viber</option>
+                            <option value="whatsapp">WhatsApp</option>
+                        </select>
+
+                        <label for="countries">Χώρα</label>
+                        <input list="country" name="countries" id="countries">
+						<datalist id="country">
+                            <option value="Ελλάδα">
+                            <option value="Κύπρος">
+                        </datalist>
+
 					</section>
 				</section>
-	
-				<button class="cfitem" type="submit">Υποβολή Φόρμας</button>
 
-			</fieldset>
+                <section class="cfitem">
+                    <h3 class="cfitem">Ερωτηματολόγιο Καταναλωτή</h3>
+
+                    <p>Φύλο καταναλωτή:</p>
+                    
+                    <label for="malesex">Αρσενικό</label>
+                    <input id="malesex" type="radio" name="sex" value="malesex">
+
+                    <label for="femalesex">Θηλυκό</label>
+                    <input id="femalesex" type="radio" name="sex" value="femalesex">
+
+                    <label for="othersex">Άλλο</label>
+                    <input id="othersex" type="radio" name="sex" value="othersex">
+                        
+                        
+                    <p>Πόσο συχνά κάνετε αγορές διαδικτυακά;</p>
+                    <label for="vfreq">Πολύ Συχνά</label>
+                    <input id="vfreq" type="radio" name="shopfreq" value="vfreq">
+                    
+                    <label for="freq">Συχνά</label>
+                    <input id="freq" type="radio" name="shopfreq" value="freq">
+
+                    <label for="rarely">Σπάνια</label>
+                    <input id="rarely" type="radio" name="shopfreq" value="rarely">
+                    
+                    <label for="never">Καθόλου</label>
+                    <input type="radio" name="shopfreq" value="never">
+
+                    <p>Ποιόν τρόπο πληρωμής χρησιμοποιείτε πιο συχνά;</p>
+                    <label for="cash">Αντικαταβολή</label>
+                    <input id="cash" type="radio" name="paymethod" value="cash">
+                    
+                    <label for="card">Τραπεζική Κάρτα</label>
+                    <input id="card" type="radio" name="paymethod" value="card">
+
+                    <label for="paypal">Paypal</label>
+                    <input id="paypal" type="radio" name="paymethod" value="paypal">
+                    
+                    <p>Τί είδους προϊόντα αγοράζετε πιο συχνά;</p>
+                    
+                    <label for="clothing">Ρουχισμού</label>
+                    <input id="clothing" type="radio" name="products" value="clothing">
+
+                    <label for="tech">Τεχνολογίας</label>
+                    <input id="tech" type="radio" name="products" value="tech">
+                    
+                    <label for="other">Άλλο</label>
+                    <input id="other" type="radio" name="products" value="other">
+
+                    <p>Ποιά εποχή αγοράζετε περισσότερα προϊόντα;</p>
+                    
+                    <label for="winter">Χειμώνα</label>
+                    <input id="winter" type="radio" name="seasons" value="winter">
+
+                    <label for="summer">Καλοκαίρι</label>
+                    <input id="summer" type="radio" name="seasons" value="summer">
+
+                    <label for="spring">Άνοιξη</label>
+                    <input id="spring" type="radio" name="seasons" value="spring">
+
+                    <label for="fall">Φθινόπωρο</label>
+                    <input id="fall" type="radio" name="seasons" value="fall">
+                    
+					<textarea type="text" id="txt_issue" name="issue" placeholder="Περιγράψτε εδώ το πρόβλημά σας."></textarea>	
+
+
+                </section>
+				
+                <button class="cfitem" type="submit">Υποβολή Φόρμας</button>
+
+			</form>
+
 
 		</main>
 
